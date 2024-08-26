@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+
+
+    <header class="header-container">
+
+    
+        <a href="./formCadastro.html">
+            <button type="button" class="btn btn-outline-light">Cadastrar-se</button>
+        </a>
+
+    </header>
+
+
+
+    <style>
+
+        .header-container{  
+        background-color: #003785;
+        height: 70px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        }
+
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #3471b3;
+    }
+
+    .container {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 60px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    button{
+        width: 100%;
+        margin-top: 10px;
+        background-color: #007bffa2;
+        border: none;
+        padding: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    a[type="link"] {
+        margin-top: 20px;
+    }
+
+   
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Login</h1>
+    <form action="" method="post">
+        <label for="username">Nome de Usuário:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+       
+</form>
+        <a href="./index2.html"><button type="submit" id="Entrar" onclick="valida_form()">Entrar</button></a>
+        <a  type="link" href="./updatepass.html">Esqueceu a senha?</a>
+    
+</div>
+
+
+
+<script>
+    function valida_form() {
+
+
+
+        if (document.getElementById("username").value.length < 3) {
+            alert('Por favor, preencha o campo nome!');
+            document.getElementById("username").focus();
+            return false;
+        }
+        if (document.getElementById("password").value.length < 3) {
+            alert('Por favor, preencha o campo senha!');
+            document.getElementById("password").focus();
+            return false;
+        }
+        else {
+            alert('Logado com sucesso!')
+        }
+    }
+</script>
+
+
+
+
+</body>
+</html>

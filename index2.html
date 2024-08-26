@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolAdmin</title>
+
+    <style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #3471b3;
+    }
+    .container {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 60px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    input[type="number"], input[type="text"], input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    button{
+        width: 100%;
+        margin-top: 10px;
+        background-color: #007bffa2;
+        border: none;
+        padding: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+
+
+
+<body>
+
+<div class="container">
+
+    <form action="" method="post">
+        <h1>Registro de Turmas:</h1>
+        <label for="idTurma">ID TURMA</label>
+        <input type="number" id="idturma" name="idturma" readonly>
+        <label for="nometurma">NOME TURMA</label>
+        <input type="text" id="nometurma" name="nometurma">
+        <label for="periodoletivo">PERIODO LETIVO</label>
+        <input type="date" id="periodoletivo" name="periodoletivo">
+        <button type="submit" id="registrar">Registrar</button>
+    </form>
+        <a href="./viewTurma.html"><button type="menu" id="visualizar" name="visualizar">Visualizar Turmas</button></a>
+
+
+</div>
+
+
+</body>
+</html>
